@@ -40,7 +40,7 @@ function setup(){
 
     else{
         canvasWidth = windowWidth - 220;
-        canvasHeight = windowWidth  * 0.67;
+        canvasHeight = (windowWidth - 220)  * 0.67;
         var canvas = createCanvas(canvasWidth, canvasHeight);
         pg = createGraphics(canvasWidth, canvasHeight);
         console.log(windowWidth);

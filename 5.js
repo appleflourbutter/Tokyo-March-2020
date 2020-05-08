@@ -51,6 +51,27 @@ function setup(){
 }
 
 function draw (){
+        pg.strokeWeight(0);
+    pg.stroke(255, 255, 255,0);
+    pg.fill(255, 255, 255, 255);
+    if (first == 0){
+        pg.rect(0, 0, canvasWidth, canvasHeight);
+        //pg.rect(0, 0, 1000, 1000);
+        first = 1;
+    }
+    pg.strokeWeight(1);
+    pg.fill(255, 255, 255, 255);
+    pg.stroke(255, 255, 255,255);
+    //pg.line(random(1000), random(1000), random(1000), random(1000));
+    pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+    pg.erase();
+    //pg.stroke(255,25,255,255);
+    //pg.line(0,0,200,500);
+    //pg.line(random(1000), random(1000), random(1000), random(1000));
+    pg.strokeWeight(1);
+    pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+    pg.noErase();
+
     imageMode(CENTER);
     image(img,canvasWidth / 2, canvasHeight/2, canvasWidth, canvasHeight);
     image(pg, canvasWidth / 2, canvasHeight/2, canvasWidth, canvasHeight);

@@ -21,7 +21,7 @@ function setup(){
         console.log(e.message);
         mobile = 1;
         var message = document.getElementById("message");
-        message.innerHTML = "<p class=message>スマートフォンなどではご覧いただけません。PCもしくはMacでご覧ください。</p>";
+        message.innerHTML = "<p class=message>スマートフォン、タブレットなどではご覧いただけません。PCもしくはMacでご覧ください。</p>";
         return;
     }
 

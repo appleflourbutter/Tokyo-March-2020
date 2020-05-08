@@ -4,6 +4,7 @@ var count = 1800;
 var canvasWidth = 0;
 var canvasHeight = 0;
 var mobile = 0;
+var ratio = 0;
 
 function preload(){
   img = loadImage("./images/9.jpg")
@@ -60,20 +61,47 @@ function draw (){
     	//pg.rect(0, 0, 1000, 1000);
     	first = 1;
     }
-    pg.strokeWeight(20);
+    pg.strokeWeight(50);
     pg.fill(255, 255, 255, 255);
     pg.stroke(255, 255, 255,255);
     //pg.line(random(1000), random(1000), random(1000), random(1000));
-    pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
-    pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+    if (Math.floor(random(120)) == 1){
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+    }
+    if (Math.floor(random(23)) == 1){
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+    }
     pg.erase();
+    //console.log(Math.floor(random(2)));
     //pg.stroke(255,25,255,255);
     //pg.line(0,0,200,500);
     //pg.line(random(1000), random(1000), random(1000), random(1000));
-    pg.strokeWeight(5);
-    pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
-    pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
-    pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+    pg.strokeWeight(50);
+    if (Math.floor(random(60)) == 1){
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+    }
+    if (Math.floor(random(41)) == 1){
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+    }
+    if (Math.floor(random(14)) == 1){
+        pg.line(random(canvasWidth), random(canvasHeight), random(canvasWidth), random(canvasHeight));
+    }
     pg.noErase();
     //pg.clear();
     imageMode(CENTER);

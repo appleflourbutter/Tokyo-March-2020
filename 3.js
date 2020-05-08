@@ -1,6 +1,7 @@
 var pg;
 var first = 0;
 var count = 43;
+var count_invisible = 0;
 var canvasWidth = 0;
 var canvasHeight = 0;
 var mobile = 0;
@@ -55,8 +56,18 @@ function draw (){
         pg.fill(255, 255, 255, 255)
         pg.stroke(255, 255, 255, 255)
         pg.rect(0, 0, canvasWidth, canvasHeight);
+        count_invisible = count_invisible + 1;
+        if (Math.floor(random(254)) < 4 && count_invisible > 83){
+            count = Math.floor(random(124));
+            count_invisible = 0;
+        }
     }
     else{
+        pg.erase();
+        pg.fill(255, 255, 255, 255)
+        pg.stroke(255, 255, 255, 255)
+        pg.rect(0, 0, canvasWidth, canvasHeight);
+        pg.noErase();
         count = count - 1;
     }
     imageMode(CENTER);

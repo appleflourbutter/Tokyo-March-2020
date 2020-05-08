@@ -63,13 +63,13 @@ function draw (){
     //pg.stroke(255,25,255,255);
     //pg.line(0,0,200,500);
     //pg.line(random(1000), random(1000), random(1000), random(1000));
-    pg.strokeWeight(4);
+    pg.strokeWeight(2);
 
     for (let i = 0; i < pos.length;  i++){
-        pg.line(0, pos[i], canvasWidth, pos[i]);
-        pos[i] = pos[i] + (Math.floor(count / 1000) * i) + random(50);
-        if (pos[i] > canvasHeight){
-            pos[i] = 0;
+        pg.line(pos[i], 0, pos[i], canvasHeight);
+        pos[i] = pos[i] - (Math.floor(count / 1000) * i) - random(50);
+        if (pos[i] < 0){
+            pos[i] = canvasWidth;
         }
         if (i == 5 || i == 7){
             pg.strokeWeight(32);
@@ -80,7 +80,7 @@ function draw (){
         if (i == 9 || i == 4){
             pg.strokeWeight(7);
         }
-        pg.line(0, pos[i], canvasWidth, pos[i]);
+        pg.line(pos[i], 0, pos[i], canvasHeight);
     }
     pg.noErase();
     //pg.clear();

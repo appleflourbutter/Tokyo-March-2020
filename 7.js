@@ -4,7 +4,7 @@ var count = 0;
 var canvasWidth = 0;
 var canvasHeight = 0;
 var mobile = 0;
-var pos = [0,0,0,0,0,0,0,0,0,0];
+var pos = [0,0,0,0,0,0,0,0,0];
 
 function preload(){
   img = loadImage("./images/7.jpg")
@@ -61,11 +61,11 @@ function draw (){
     //pg.stroke(255,25,255,255);
     //pg.line(0,0,200,500);
     //pg.line(random(1000), random(1000), random(1000), random(1000));
-    pg.strokeWeight(10);
+    pg.strokeWeight(13);
 
     for (let i = 0; i < pos.length;  i++){
         pg.line(0, pos[i], canvasWidth, pos[i]);
-        pos[i] = pos[i] + (3 * i) + random(20);
+        pos[i] = pos[i] + random(34);
         if (pos[i] > canvasHeight){
             pos[i] = 0;
         }

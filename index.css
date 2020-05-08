@@ -7,38 +7,64 @@ canvas{
 	margin: auto;
 }
 a{
-	font-family: coronette, serif;
+	font-size: 20;
+	font-family: dnp-shuei-gothic-gin-std, sans-serif;
 	font-weight: 400;
-	font-style: normal;
-	font-size: 24;
+	font-style: bold;
+}
+
+h2{
+	font-size: 50;
+	font-family: dnp-shuei-gothic-gin-std, sans-serif;
+	font-weight: 400;
+	font-style: bold;
+
+	margin: 0em 0;
 }
 
 .name{
 	font-size: 20;
 	font-family: dnp-shuei-gothic-gin-std, sans-serif;
-	font-weight: 1000;
-	font-style: bold;
-}
-
-.quote{
-	margin: 2em 0;;
-	line-height: 1.2;
-
-	font-size: 40;
-	font-family: dnp-shuei-gothic-gin-std, sans-serif;
 	font-weight: 400;
 	font-style: bold;
 }
 
-.buttons{
+.member{
+	font-size: 24;
+	font-family: dnp-shuei-gothic-gin-std, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+
+	margin: 0.2em 0;
 }
+
+.quote{
+	margin: 0.1em 0 3em 0;
+	line-height: 1.2;
+
+	font-size: 30;
+	font-family: dnp-shuei-gothic-gin-std, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.buttons{
+	width: 400px;
+    margin: auto;
+}
+
+.wideimage{ width: 100%; }
 
 cite{
 	font-size: 20;
 	font-family: dnp-shuei-gothic-gin-std, sans-serif;
 	font-weight: 400;
 	font-style: bold;
+	
+	float: right;
 }
+
+.right{text-align: right; }
 
 .message{
 	top: 0;
